@@ -38,7 +38,9 @@ public class IntroGame : Game
     {
         base.Update(gameTime);
 
-        _xPosition += _speed * (float)gameTime.ElapsedGameTime.TotalSeconds;
+        _xPosition  += _speed * (float)gameTime.ElapsedGameTime.TotalSeconds;
+        _yPosition  += _speed * (float)gameTime.ElapsedGameTime.TotalSeconds;
+        
     }
 
     protected override void Draw(GameTime gameTime)
